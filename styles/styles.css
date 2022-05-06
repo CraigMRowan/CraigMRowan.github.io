@@ -78,17 +78,21 @@ h1 {
 
 /*Body*/
 body {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 /*Index Content*/
 #indexcontent {
     font-family: 'PT Sans Narrow', sans-serif;
-    padding: 50px;
+    padding: 30px;
     font-size: 30px;
     max-width: 800px;
     text-align: center;
     margin: auto;
+}
+
+#restaurantimage {
+    text-align: center;
 }
 
 #booknow {
