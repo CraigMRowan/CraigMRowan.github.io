@@ -111,7 +111,7 @@ body {
 }
 
 /*Contact Content*/
-#contactform {
+#contactform, #reservationform {
     margin: 0 auto;
     display: block;
 }
