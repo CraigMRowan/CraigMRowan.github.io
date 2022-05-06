@@ -110,12 +110,55 @@ body {
     color: black;
 }
 
-/*Contact Content*/
+/*Menu Content*/
+#menuheading {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color:sienna;
+}
+
+#menuitem {
+    text-align: center
+}
+
+#menusubheading {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    display: inline-block;
+    color:darkslategray;
+    padding-right: 30px;
+}
+
+#menuprice {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    display: inline-block;
+    color:brown;
+}
+
+#menucontent {
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 30px;
+    padding-top: 0px;
+    font-size: 25px;
+    font-weight: lighter;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    color: saddlebrown;
+}
+
+/*Forms*/
 #contactform, #reservationform {
     margin: 0 auto;
     display: block;
 }
 
+/*Google Map*/
 #map {
     height: 400px;
     width: 100%;
