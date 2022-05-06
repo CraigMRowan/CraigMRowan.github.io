@@ -3,12 +3,6 @@
     box-sizing: border-box;
 }
 
-/* Google Map */
-#map {
-    height: 400px;
-    width: 100%;
-}
-
 /*Header and Footer*/
 #header, #footer {
     background-color:lightgray;
@@ -107,4 +101,10 @@ body {
 #booknowlink {
     text-decoration: none;
     color: black;
-}                             
+}
+
+/* Google Map */
+#map {
+    height: 400px;
+    width: 100%;
+}
