@@ -14,6 +14,11 @@
     position: relative;
 }
 
+#footer {
+    position: fixed;
+    bottom: 0;
+}
+
 #headeritem, #footeritem {
     font-family: 'Zen Kurenaido', sans-serif;
     display: inline-block;
@@ -28,19 +33,16 @@
     font-size: 25px;
 }
 
-#footer {
-    position: fixed;
-    bottom: 0;
+#footerleft, #footerright {
+    margin-left: 10px;
 }
 
 #footerleft {
     float: left;
-    margin-left: 10px;
 }
 
 #footerright {
     float: right;
-    margin-right: 10px;
 }
 
 .fa {
@@ -51,19 +53,20 @@
     text-decoration: none;
 }
 
+.fa-facebook, .fa-instagram, .fa-twitter {
+    color: white;
+}
+
 .fa-facebook {
     background: #3B5998;
-    color: white;
 }
 
 .fa-instagram {
     background: #125688;
-    color: white;
 }
 
 .fa-twitter {
     background: #55ACEE;
-    color: white;
 }
 
 /*Headings*/
@@ -103,7 +106,12 @@ body {
     color: black;
 }
 
-/* Google Map */
+/*Contact Content*/
+#contactform {
+    margin: 0 auto;
+    display: block;
+}
+
 #map {
     height: 400px;
     width: 100%;
