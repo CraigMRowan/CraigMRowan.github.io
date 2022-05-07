@@ -15,9 +15,8 @@
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 .headeritem, .footeritem {
@@ -85,6 +84,9 @@ h1 {
 /*Body*/
 body {
     margin-bottom: 50px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 /*Index Content*/
@@ -98,7 +100,11 @@ body {
 }
 
 .restaurantimage {
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 60%;
 }
 
 .booknow {
@@ -205,7 +211,7 @@ body {
 }
 
 /*Forms*/
-.contactform, .reservationform {
+.contactform, .reservationform, .hourscalendar {
     margin: 0 auto;
     display: block;
 }
