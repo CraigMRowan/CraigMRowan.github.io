@@ -4,22 +4,22 @@
 }
 
 /*Header and Footer*/
-#header, #footer {
+.header, .footer {
     background-color:lightgray;
     width: 100%;
     text-align: center;
 }
 
-#header {
+.header {
     position: relative;
 }
 
-#footer {
+.footer {
     position: fixed;
     bottom: 0;
 }
 
-#headeritem, #footeritem {
+.headeritem, .footeritem {
     font-family: 'Zen Kurenaido', sans-serif;
     display: inline-block;
     padding: 10px;
@@ -27,22 +27,20 @@
     color: black;
 }
 
-#headeritem {
+.headeritem {
     width: 170px;
     background-color: darkgray;
     font-size: 25px;
 }
 
-#footerleft, #footerright {
+.footerleft {
+    float: left;
     margin-left: 10px;
 }
 
-#footerleft {
-    float: left;
-}
-
-#footerright {
+.footerright {
     float: right;
+    margin-left: 10px;
 }
 
 .fa {
@@ -82,7 +80,7 @@ body {
 }
 
 /*Index Content*/
-#indexcontent {
+.indexcontent {
     font-family: 'PT Sans Narrow', sans-serif;
     padding: 30px;
     font-size: 30px;
@@ -91,11 +89,11 @@ body {
     margin: auto;
 }
 
-#restaurantimage {
+.restaurantimage {
     text-align: center;
 }
 
-#booknow {
+.booknow {
     font-family: 'Zen Kurenaido', sans-serif;
     font-size: 25px;
     width: 150px;
@@ -105,13 +103,13 @@ body {
     background-color: lightgreen;
 }
 
-#booknowlink {
+.booknowlink {
     text-decoration: none;
     color: black;
 }
 
 /*Menu Content*/
-#menuheading {
+.menuheading {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     text-align: center;
@@ -119,11 +117,11 @@ body {
     color:sienna;
 }
 
-#menuitem {
+.menuitem {
     text-align: center
 }
 
-#menusubheading {
+.menusubheading {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     font-weight: lighter;
@@ -132,7 +130,7 @@ body {
     padding-right: 30px;
 }
 
-#menuprice {
+.menuprice {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     font-weight: lighter;
@@ -140,7 +138,7 @@ body {
     color:brown;
 }
 
-#menucontent {
+.menucontent {
     font-family: 'PT Sans Narrow', sans-serif;
     padding: 30px;
     padding-top: 0px;
@@ -152,22 +150,37 @@ body {
     color: saddlebrown;
 }
 
-#drinks {
-    max-width: 450px;
-    margin: auto;
-    height: min-content;
+.menuimages {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 20%;
 }
 
-#drinkname {
+.drinks {
+    margin: auto;
+    width: 550px;
+}
+
+.drinknamecolumn {
+    width: 85%;
     float: left;
+}
+
+.drinkname {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 25px;
     font-weight: lighter;
     color: saddlebrown;
 }
 
-#drinkprice {
+.drinkpricecolumnn {
+    width: 15%;
     float: right;
+}
+
+.drinkprice {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 25px;
     font-weight: lighter;
@@ -175,7 +188,7 @@ body {
 }
 
 /*Forms*/
-#contactform, #reservationform {
+.contactform, .reservationform {
     margin: 0 auto;
     display: block;
 }
