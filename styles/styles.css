@@ -20,15 +20,15 @@
 }
 
 .headeritem, .footeritem {
-    font-family: 'Zen Kurenaido', sans-serif;
     display: inline-block;
-    padding: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     text-decoration: none;
     color: black;
 }
 
 .headeritem {
-    width: 170px;
+    width: 200px;
     background-color: darkgray;
     font-size: 25px;
 }
@@ -58,25 +58,23 @@
     text-decoration: none;
 }
 
-.fa-facebook, .fa-instagram, .fa-twitter {
-    color: white;
-}
-
 .fa-facebook {
+    color: white;
     background: #3B5998;
 }
 
 .fa-instagram {
+    color: white;
     background: #125688;
 }
 
 .fa-twitter {
+    color: white;
     background: #55ACEE;
 }
 
 /*Headings*/
 h1 {
-    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     text-align: center;
 }
@@ -90,7 +88,6 @@ body {
 
 /*Index Content*/
 .indexcontent {
-    font-family: 'PT Sans Narrow', sans-serif;
     padding: 30px;
     font-size: 30px;
     max-width: 800px;
@@ -107,7 +104,6 @@ body {
 }
 
 .booknow {
-    font-family: 'Zen Kurenaido', sans-serif;
     font-size: 25px;
     width: 150px;
     padding: 10px;
@@ -123,7 +119,6 @@ body {
 
 /*Menu Content*/
 .menuheading {
-    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     text-align: center;
     font-weight: bold;
@@ -135,7 +130,6 @@ body {
 }
 
 .menusubheading {
-    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     font-weight: lighter;
     display: inline-block;
@@ -144,7 +138,6 @@ body {
 }
 
 .menuprice {
-    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     font-weight: lighter;
     display: inline-block;
@@ -152,7 +145,6 @@ body {
 }
 
 .menucontent {
-    font-family: 'PT Sans Narrow', sans-serif;
     padding: 30px;
     padding-top: 0px;
     font-size: 25px;
@@ -182,7 +174,6 @@ body {
 }
 
 .drinkname {
-    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 25px;
     font-weight: lighter;
     color: saddlebrown;
@@ -194,7 +185,6 @@ body {
 }
 
 .drinkprice {
-    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 25px;
     font-weight: lighter;
     color:brown;
@@ -202,7 +192,6 @@ body {
 
 /*Privacy Content*/
 .privacycontent {
-    font-family: 'PT Sans Narrow', sans-serif;
     padding: 30px;
     font-size: 30px;
     max-width: 800px;
