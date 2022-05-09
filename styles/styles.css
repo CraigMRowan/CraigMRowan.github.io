@@ -103,6 +103,12 @@ body {
     width: 60%;
 }
 
+@media screen and (max-width:800px) {
+    .restaurantimage {
+      width:100%;
+    }
+}
+
 .booknow {
     font-size: 25px;
     width: 150px;
@@ -161,6 +167,12 @@ body {
     margin-right: auto;
     margin-bottom: 40px;
     width: 20%;
+}
+
+@media screen and (max-width:800px) {
+    .menuimages {
+      width:100%;
+    }
 }
 
 .drinks {
