@@ -21,8 +21,8 @@
 
 .headeritem, .footeritem {
     display: inline-block;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-decoration: none;
     color: black;
 }
@@ -34,6 +34,7 @@
 }
 
 .footerleft {
+    height: 45px;
     float: left;
     width: 40%;
     text-align: left;
@@ -50,27 +51,29 @@
     text-align: right;
 }
 
-.fa {
-    padding: 15px;
-    font-size: 30px;
-    width: 50px;
+.facebook_background, .instagram_background, .twitter_background {
     text-align: center;
-    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
 }
 
-.fa-facebook {
-    color: white;
+.facebook_background {
     background: #3B5998;
 }
 
-.fa-instagram {
-    color: white;
+.instagram_background {
     background: #125688;
 }
 
-.fa-twitter {
-    color: white;
+.twitter_background {
     background: #55ACEE;
+}
+
+.facebook_logo, .instagram_logo, .twitter_logo {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
 }
 
 /*Headings*/
