@@ -205,16 +205,29 @@ body {
     color:brown;
 }
 
+/*Staff Content*/
+.staffcontactstable {
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: 30px;
+    text-align: left;
+    padding: 12px;
+}
+
+.staffcontactstable th, .staffcontactstable td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /*Privacy Content*/
 .privacycontent {
     padding: 30px;
     font-size: 30px;
     max-width: 800px;
-    margin: auto;
 }
 
 /*Forms*/
-.contactform, .reservationform, .hourscalendar {
+.contactform, .reservationform, .hourscalendar, .rostercalendar {
     margin: 0 auto;
     display: block;
 }
