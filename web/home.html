@@ -2,45 +2,214 @@
 <html>
     <head>
         <title>The Haukai Restaurant</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel='stylesheet' type='text/css' href='./styles/styles.css'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDlCDG_suK4ibzDcFPuHL9dAktuT4v4AoA&callback=initMap' type='text/javascript'></script>
+        <script src='./scripts/scripts.js' defer></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ969HE4TD"></script>
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'G-HZ969HE4TD');
+        gtag('config', 'G-HZ969HE4TD');
         </script>
     </head>
 
-    <header class='header'>
-        <a href='./home.html' class='headeritem'>Home</a>
-        <a href='./contact.html' class='headeritem'>Contact</a>
-        <a href='./hours.html' class='headeritem'>Opening Hours</a>
-        <a href='./menu.html' class='headeritem'>Menu</a>
-        <a href='./reservations.html' class='headeritem'>Reservations</a>
-        <a href='./private/private.html' class='headeritem'>Staff</a>
-    </header>
-
     <body>
-        <h1>The Hauraki Restaurant</h1>
-        <p class='indexcontent'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem.
-        </p>
-        <img class='restaurantimage' alt='Restaurant interior' src="./images/restaurant.jpeg">
-        <div class='booknow'>
-            <a href='./reservations.html' class='booknowlink'>Book Now!</a>
+        <!-- Links (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-row w3-padding w3-black">
+                <div class="w3-col s2">
+                    <a href="#" class="w3-button w3-block w3-black">HOME</a>
+                </div>
+                <div class="w3-col s2">
+                    <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+                </div>
+                <div class="w3-col s2">
+                    <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+                </div>
+                <div class="w3-col s2">
+                    <a href="#reservations" class="w3-button w3-block w3-black">RESERVATIONS</a>
+                </div>
+                <div class="w3-col s2">
+                    <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+                </div>
+                <div class="w3-col s2">
+                    <a href="./private/private.html" class="w3-button w3-block w3-black">STAFF</a>
+                </div>
+            </div>
         </div>
-    </body>
 
-    <footer class='footer'>
-        <div class='footerleft'>
+        <!-- Header with image -->
+        <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+            <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+                <span class="w3-tag">Open from 11am to 10pm, Tue to Sat</span>
+            </div>
+            <div class="w3-display-middle w3-center">
+                <span class="w3-text-white" style="font-size:90px">The<br>Haukai<br>Restaurant</span>
+            </div>
+            <div class="w3-display-bottomright w3-center w3-padding-large">
+                <span class="w3-text-white">1 Island Street Kerikeri, Bay of Islands</span>
+            </div>
+        </header>
+
+        <!-- Add a background color and large text to the whole page -->
+        <div class="w3-sand w3-grayscale w3-large">
+
+            <!-- About Container -->
+            <div class="w3-container" id="about">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum 
+                        dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint 
+                        commodi repudiandae consequuntur voluptatum laborum numquam blanditiis 
+                        harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! 
+                        Provident similique accusantium nemo autem.</p>
+                    <img src="./images/restaurant.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                    <p><strong>Opening hours:</strong> 11am to 10pm, Tue to Sat</p>
+                    <p><strong>Address:</strong> 1 Island Street Kerikeri, Bay of Islands</p>
+                </div>
+            </div>
+
+            <!-- Menu Container -->
+            <div class="w3-container" id="menu">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+                    <div class="w3-row w3-center w3-card w3-padding">
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Appetizers');" id="myLink">
+                            <div class="w3-col s3 tablink">Appetizers</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Main');">
+                            <div class="w3-col s3 tablink">Main</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Dessert');">
+                            <div class="w3-col s3 tablink">Dessert</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                            <div class="w3-col s3 tablink">Drink</div>
+                        </a>
+                    </div>
+
+                    <div id="Appetizers" class="w3-container menu w3-padding-48 w3-card">
+                        <h5>Rewena Bread</h5>
+                        <p class="w3-text-grey">Traditional Māori bread 10.00</p><br>
+                
+                        <h5>Paua Fritter</h5>
+                        <p class="w3-text-grey">Finely diced pieces of paua, served with a side salad and horopito dressing 16.00</p><br>
+                        
+                        <h5>Raw Fish</h5>
+                        <p class="w3-text-grey">Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions 20.00</p><br>
+                        
+                        <h5>Poached Salmon</h5>
+                        <p class="w3-text-grey">Salmon poached in an orange and pistachio glaze, served with rewena bread 22.00</p><br>
+                        
+                        <h5>Seafood Bastket</h5>
+                        <p class="w3-text-grey">Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns 25.00</p>
+                    </div>
+
+                    <div id="Main" class="w3-container menu w3-padding-48 w3-card">
+                        <h5>Fish of the Day</h5>
+                        <p class="w3-text-grey">Beer battered fish and kumara fries, served with a side salad and homemade tartare 25.00</p><br>
+                        
+                        <h5>Mussells and Scallops</h5>
+                        <p class="w3-text-grey">Steamed mussel & scallop mousse, honey and soy broth 25.00</p><br>
+                        
+                        <h5>Seafood Chowder</h5>
+                        <p class="w3-text-grey">Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread 30.00</p><br>
+                        
+                        <h5>Pork Belly</h5>
+                        <p class="w3-text-grey">Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle 30.00</p><br>
+                        
+                        <h5>Lamb Steak</h5>
+                        <p class="w3-text-grey">New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut squash and a mushroom Jus 33.00</p><br>
+                        
+                        <h5>Venison</h5>
+                        <p class="w3-text-grey">Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus 33.00</p>
+                    </div>
+
+                    <div id="Dessert" class="w3-container menu w3-padding-48 w3-card">
+                        <h5>Kāpiti Ice Cream</h5>
+                        <p class="w3-text-grey">Check for daily specials 10.00</p><br>
+
+                        <h5>Steam Pudding</h5>
+                        <p class="w3-text-grey">Golden syrup flavoured steam pudding, served with vanilla ice cream 12.00</p><br>
+                        
+                        <h5>Mini Pavlova</h5>
+                        <p class="w3-text-grey">Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit 16.00</p><br>
+
+                        <h5>Banoffee Pie</h5>
+                        <p class="w3-text-grey">Toffee, fresh bananas and fresh cream 16.00</p>
+                    </div>
+
+                    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+                        <h5>Red wine</h5>
+                        <p class="w3-text-grey">Terrace Edge Pinot Noir, 2012, Wairarapa 53.00/13.00</p>
+                        <p class="w3-text-grey">Altitude Pinot Noir, 2010, Marlborough 64.00/15.00</p>
+                        <p class="w3-text-grey">Greystone Pinot Noir, 2012, Wairarapa 73.00/17.00</p>
+                        <p class="w3-text-grey">Terrace Edge, Syrah, 2012 Wairarapa 53.00/13.00</p>
+                        <p class="w3-text-grey">Altitude Syrah, 2010 Marlborough 64.00/15.00</p>
+                        <p class="w3-text-grey">Greystone Syrah, 2012, Wairarapa 73.00/17.00</p>
+                        <p class="w3-text-grey">Pegasus Bay Merlot, 2013, Waipara 65.00/14.00</p>
+                        <p class="w3-text-grey">Pegasus Bay Pinot Noir, 2013, Waipara 110.00</p><br>
+
+                        <h5>White Wine</h5>
+                        <p class="w3-text-grey">Spade Oak Pinot Gris, 2011, Gisborne 40.00/10.00</p>
+                        <p class="w3-text-grey">Maude Pinot Gris, 2017, Otago 49.50/11.00</p>
+                        <p class="w3-text-grey">Charles Wiffen Chardonnay, 2013, Otago 48.00/11.00</p>
+                        <p class="w3-text-grey">Amisfield, Riesling, 2016, Otago 53.00/12.00</p>
+                        <p class="w3-text-grey">Lamont Riesling, 2010, Otago 57.00/13.00</p>
+                        <p class="w3-text-grey">Elephant Hill Viognier, 2013, Hawkes Bay 55.00/12.00</p>
+                        <p class="w3-text-grey">Folium Sauvignon Blanc, 2011, Marlborough 52.00/11.00</p>
+                        <p class="w3-text-grey">Billecart-Salmon Brut Reserve, France 120.00</p><br>
+
+                        <h5>Beer & Cider</h5>
+                        <p class="w3-text-grey">Garage project range 11.00</p>
+                        <p class="w3-text-grey">Tuatara range 11.00</p>
+                        <p class="w3-text-grey">Panhead range 10.00</p>
+                        <p class="w3-text-grey">Coopers Ale 10.00</p>
+                        <p class="w3-text-grey">Heineken 11.00</p>
+                        <p class="w3-text-grey">Moa Cider 10.00</p>
+                        <p class="w3-text-grey">Crooked Cider 10.00</p><br>
+
+                        <h5>Non-Alcoholic</h5>
+                        <p class="w3-text-grey">Mineral water 4.00</p>
+                        <p class="w3-text-grey">Soft drinks 4.00</p>
+                        <p class="w3-text-grey">Juice 4.00</p>
+                        <p class="w3-text-grey">Coffee 4.50</p>
+                        <p class="w3-text-grey">Tea 3.50</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact/Area Container -->
+            <div class="w3-container" id="reservations">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">RESERVATIONS</span></h5>
+                    <iframe id="reservationform" src="https://docs.google.com/forms/d/e/1FAIpQLSecYgXyRzOuC0bQwra0h2A1fdR-yxb5OKbaC9sjJ5ukAe2mQQ/viewform?embedded=true" width="640" height="1140" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+
+            <!-- Contact/Area Container -->
+            <div class="w3-container" id="contact" style="padding-bottom:32px;">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT US</span></h5>
+                    <iframe id="contactform" src="https://docs.google.com/forms/d/e/1FAIpQLSeIUJIH4zmeDXPLqvHE-H32QqmNGG4zZtNybxt-TJ3Tpgjtcg/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <div id="map"></div>
+                </div>
+            </div>
+
+        <!-- End page content -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-light-grey w3-large">
             <a href='https://www.facebook.com' target='_blank' class='facebook_background'>
                 <img class='facebook_logo' src='./images/facebook logo_icon.svg'>
             </a>
@@ -50,13 +219,32 @@
             <a href='https://www.twitter.com' target='_blank' class='twitter_background'>
                 <img class='twitter_logo' src='./images/twitter_logo_icon.svg'>
             </a>
-        </div>
-        <div class='footercenter'>
-            <a href="./privacy.html" class='footeritem'>Privacy Statement</a>
-        </div>
-        <div class='footerright'>
-            <div class='footeritem'>1 Island Street Kerikeri, Bay of Islands</div>
-            <div class='footeritem'>Ph: (09) 401 4019</div>
-        </div>
-    </footer>
+
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-dark-gray">Privacy Statement</button>
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                <header class="w3-container w3-black"> 
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h2>Privacy Statement</h2>
+                </header>
+                <div class="w3-container">
+                    <p>We collect personal information from you, including information about your:</p>
+                    <ul>
+                        <li>Name</li>
+                        <li>Contact Information</li>
+                    </ul>
+                    <p>We collect your personal information in order to:</p>
+                    <ul>
+                        <li>Make restaurant reservations</li>
+                        <li>Respond to customer queries</li>
+                    </ul>
+                    <p>Providing some information is optional. If you choose not to enter contact information, we'll be unable to make reservations.</p>
+                    <p>
+                        You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at , or 09 401 4019.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
